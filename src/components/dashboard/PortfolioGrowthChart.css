@@ -1,0 +1,73 @@
+.chart-container-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.chart-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.chart-actions {
+    display: flex;
+    gap: 0.5rem;
+    background: var(--color-bg-secondary);
+    padding: 4px;
+    border-radius: var(--radius-md);
+}
+
+.chart-filter {
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    border-radius: var(--radius-sm);
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.chart-filter:hover {
+    color: var(--color-text-primary);
+}
+
+.chart-filter.active {
+    background: white;
+    color: var(--color-accent-primary);
+    box-shadow: var(--shadow-sm);
+    font-weight: 600;
+}
+
+.chart-wrapper {
+    width: 100%;
+}
+
+.custom-tooltip {
+    background: white;
+    padding: 0.75rem;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+}
+
+.tooltip-date {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.tooltip-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-accent-primary);
+}

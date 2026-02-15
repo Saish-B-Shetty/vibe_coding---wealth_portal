@@ -1,0 +1,94 @@
+@import './styles/colors.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-secondary);
+  /* Grey background for app, white for cards */
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  background: none;
+}
+
+/* Utilities for Coin-like Design */
+
+/*Replaces "glass-panel" with a clean flat card style*/
+.glass-panel {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: none;
+  /* Remove blur */
+  border-radius: var(--radius-md);
+}
+
+/* Cleaner, sharper inputs */
+input,
+select,
+textarea {
+  font-family: inherit;
+  color: var(--color-text-primary);
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+input:focus {
+  outline: 2px solid var(--color-accent-primary);
+  border-color: transparent;
+  background: white;
+}
+
+/* Scrollbar - Thin and grey */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+
+/* Text Utilities */
+.text-muted {
+  color: var(--color-text-secondary);
+}
+
+.text-success {
+  color: var(--color-accent-success);
+}
+
+.text-danger {
+  color: var(--color-accent-error);
+}
+
+.font-bold {
+  font-weight: 600;
+}

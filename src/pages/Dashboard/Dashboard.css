@@ -1,0 +1,286 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.section-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+/* Welcome Card - Clean Blue Gradient like Console/Coin */
+.welcome-card {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #387ed1 0%, #2563eb 100%);
+    border: none;
+    box-shadow: var(--shadow-md);
+    color: white;
+}
+
+.welcome-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.wave-emoji {
+    font-size: 2rem;
+}
+
+.welcome-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
+
+.welcome-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+.welcome-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.btn-tour-primary {
+    flex: 1;
+    padding: 0.6rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.btn-tour-secondary {
+    flex: 1;
+    padding: 0.6rem;
+    background: white;
+    color: var(--color-accent-primary);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+/* Goal Card - White with shadow */
+.goal-card {
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: white;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+}
+
+.goal-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent-primary);
+}
+
+.goal-card:active {
+    transform: scale(0.98);
+}
+
+.goal-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.progress-track {
+    height: 6px;
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-full);
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--color-accent-primary);
+    border-radius: var(--radius-full);
+}
+
+.goal-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+
+.goal-status {
+    color: var(--color-accent-info);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+}
+
+/* Quick Actions */
+.quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+}
+
+.action-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    border-radius: var(--radius-lg);
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+    background: white;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+}
+
+.action-card:hover {
+    background: var(--color-bg-hover);
+    transform: translateY(-2px);
+    border-color: var(--color-accent-primary);
+}
+
+.action-icon-wrapper {
+    color: var(--color-accent-primary);
+}
+
+/* Feature Card - Moved to Blue/Clean style */
+.feature-card-gradient {
+    position: relative;
+    background: white;
+    border: 1px solid #bfdbfe;
+    /* Light Blue border */
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    color: var(--color-text-primary);
+    margin-top: 0.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.close-feature-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: var(--color-text-secondary);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-feature-btn:hover {
+    background: var(--color-bg-secondary);
+}
+
+.feature-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+}
+
+.feature-desc {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.btn-feature-cta {
+    background: var(--color-accent-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.btn-feature-cta:hover {
+    background: #2563eb;
+}
+
+/* Market Snapshot */
+.market-snapshot {
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    background: white;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+}
+
+.section-header-compact h3 {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+}
+
+.market-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+}
+
+.market-row:last-child {
+    border-bottom: none;
+}
+
+.market-val {
+    font-weight: 600;
+}
+
+.market-val.positive {
+    color: var(--color-accent-success);
+}
+
+.market-change {
+    font-size: 0.8rem;
+    margin-left: 4px;
+}
+
+/* Learn Strip */
+.learn-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #bfdbfe;
+    border-radius: var(--radius-lg);
+    color: var(--color-accent-primary);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+}
+
+.learn-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}

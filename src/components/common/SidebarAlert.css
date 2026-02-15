@@ -1,0 +1,89 @@
+.sidebar-alert {
+    background: #fff1f2;
+    /* Rose 50 */
+    border: 1px solid #fda4af;
+    /* Rose 300 */
+    border-radius: var(--radius-md);
+    padding: 0.75rem;
+    margin: 1rem;
+    margin-top: auto;
+    /* Push to bottom if flex container allows, or just margin */
+    animation: slideIn 0.3s ease-out;
+}
+
+.alert-header-side {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.alert-icon-wrapper {
+    color: #e11d48;
+    /* Rose 600 */
+    display: flex;
+    align-items: center;
+}
+
+.alert-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e11d48;
+    flex: 1;
+}
+
+.btn-close-alert {
+    color: var(--color-text-secondary);
+    padding: 2px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-close-alert:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.alert-msg {
+    font-size: 0.8rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.btn-check-now {
+    width: 100%;
+    background: #e11d48;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.4rem;
+    border-radius: var(--radius-sm);
+    transition: background 0.2s;
+}
+
+.btn-check-now:hover {
+    background: #be123c;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hide on mobile if space is tight, or adapt */
+@media (max-width: 768px) {
+    .sidebar-alert {
+        display: none;
+        /* Usually sidebars become bottom navs on mobile, so hide this specific widget */
+    }
+}

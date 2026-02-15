@@ -1,0 +1,75 @@
+.risk-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+}
+
+.riskometer-arc {
+    width: 60px;
+    height: 30px;
+    /* Half circle */
+    background: conic-gradient(from 270deg,
+            #22c55e 0deg 30deg,
+            /* Low */
+            #84cc16 30deg 60deg,
+            /* Low-Mod */
+            #eab308 60deg 90deg,
+            /* Mod */
+            #f97316 90deg 120deg,
+            /* Mod-High */
+            #ef4444 120deg 150deg,
+            /* High */
+            #b91c1c 150deg 180deg
+            /* Very High */
+        );
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.riskometer-arc::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 20px;
+    background: var(--color-bg-card);
+    /* Match card bg to create arc thickness */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.riskometer-needle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    height: 28px;
+    background: var(--color-text-primary);
+    transform-origin: bottom center;
+    z-index: 10;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.riskometer-needle::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: var(--color-text-primary);
+    border-radius: 50%;
+}
+
+.risk-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    margin-top: 4px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,63 @@
+:root {
+  /* Zerodha Coin / Kite Inspired Palette */
+
+  /* Backgrounds */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f9f9f9;
+  /* Very light grey for contrast */
+  --color-bg-card: #ffffff;
+  --color-bg-hover: #f1f3f5;
+
+  /* Text */
+  --color-text-primary: #444444;
+  /* Dark grey, slightly softer than black */
+  --color-text-secondary: #777777;
+  /* Medium grey */
+  --color-text-muted: #9b9b9b;
+  --color-text-inverse: #ffffff;
+
+  /* Brand Accents */
+  --color-accent-primary: #387ed1;
+  /* Zerodha Blue */
+  --color-accent-secondary: #ff5722;
+  /* Kite Orange (occasional use) */
+  --color-accent-success: #4caf50;
+  /* Green */
+  --color-accent-warning: #ffb600;
+  /* Gold/Yellow */
+  --color-accent-error: #ff3b30;
+  --color-accent-info: #387ed1;
+
+  /* Borders & Dividers */
+  --color-border: #e0e0e0;
+  --color-divider: #eeeeee;
+
+  /* Shadows - Subtle & Clean */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.05);
+  --shadow-glow: none;
+  /* Removed for flat design */
+
+  /* Layout */
+  --sidebar-width: 240px;
+  --header-height: 64px;
+
+  /* Shape */
+  --radius-sm: 4px;
+  /* Sharper corners like Coin */
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Dark Mode Override (Optional - keeping variables just in case, but primary is Light now) */
+@media (prefers-color-scheme: dark) {
+  /* We are forcing Light Mode for Coin look as requested, so commenting out auto-switch
+     or we could implement a manual toggle later. For now, enforcing the specific "Zerodha" look 
+     usually implies their signature clean white interface.
+  */
+}
